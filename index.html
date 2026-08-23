@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الشخصي والمهني | Professional Portfolio</title>
+    <!-- Google Fonts: Cairo for Arabic, Montserrat for English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="container hero-container animate-on-scroll">
+            <div class="bilingual-block">
+                <div class="ar-side">
+                    <h1>مرحباً بك في موقعي الشخصي والمهني</h1>
+                    <p class="subtitle">منصة متكاملة لعرض السيرة الذاتية، الخبرات الأكاديمية، والشهادات المهنية بأسلوب حديث وجذاب.</p>
+                </div>
+                <div class="en-side">
+                    <h1>Welcome to My Professional Portfolio</h1>
+                    <p class="subtitle">A comprehensive interactive platform highlighting professional achievements, academic background, and certifications.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+
+        <!-- Professional Summary Section -->
+        <section class="card section-card animate-on-scroll">
+            <div class="section-header">
+                <i class="fas fa-user-tie section-icon"></i>
+                <div class="bilingual-inline">
+                    <span class="ar-inline">الملخص المهني</span>
+                    <span class="en-inline">Professional Summary</span>
+                </div>
+            </div>
+            <div class="bilingual-block">
+                <div class="ar-side">
+                    <p>محترف طموح أتمتع بخبرة ممتازة ومعرفة عميقة في مجالي المهني، أمتلك مهارات قيادية عالية وقدرة مثبتة على حل المشكلات وإدارة المشاريع بكفاءة. أسعى دائماً لتطبيق أفضل الممارسات المبتكرة وتطوير الحلول الذكية التي تسهم في رفع الأداء وتحقيق الأهداف الاستراتيجية للمؤسسة.</p>
+                </div>
+                <div class="en-side">
+                    <p>A dedicated and results-driven professional with a proven track record of excellence. Possesses strong analytical, problem-solving, and project management skills. Passionate about implementing innovative solutions, driving organizational efficiency, and delivering high-value outcomes in dynamic working environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Objective Section -->
+        <section class="card section-card animate-on-scroll">
+            <div class="section-header">
+                <i class="fas fa-bullseye section-icon"></i>
+                <div class="bilingual-inline">
+                    <span class="ar-inline">الهدف المهني</span>
+                    <span class="en-inline">Career Objective</span>
+                </div>
+            </div>
+            <div class="bilingual-block">
+                <div class="ar-side">
+                    <p>الانضمام إلى بيئة عمل ديناميكية ومحفزة تتيح لي استغلال مهاراتي الأكاديمية والعملية، والمساهمة الفعالة في تنفيذ المشاريع النوعية، مع الحرص على التطوير المستمر والتدرج المهني للوصول إلى أعلى المراتب القيادية.</p>
+                </div>
+                <div class="en-side">
+                    <p>To secure a challenging position in a progressive organization where I can leverage my technical expertise and academic foundation to drive innovation, contribute to key projects, and advance into leadership roles through continuous professional development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Document Folders Section -->
+        <section class="folders-wrapper">
+            <div class="section-title-main animate-on-scroll">
+                <div class="bilingual-block">
+                    <div class="ar-side">
+                        <h2><i class="fas fa-folder-open"></i> المجلدات والوثائق الرسمية</h2>
+                        <p>اضغط على أي مجلد لاستعراض ومعاينة المستندات والشهادات الخاصة به</p>
+                    </div>
+                    <div class="en-side">
+                        <h2><i class="fas fa-folder-open"></i> Documents & Archives</h2>
+                        <p>Click on any folder below to inspect and download related files & credentials</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-folders">
+
+                <!-- 1. Curriculum Vitae -->
+                <div class="folder-card animate-on-scroll" onclick="openModal('cv-modal')">
+                    <div class="folder-header-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="bilingual-block">
+                        <div class="ar-side">
+                            <h3>السيرة الذاتية</h3>
+                            <p>الملف الكامل للسيرة الذاتية (CV)</p>
+                        </div>
+                        <div class="en-side">
+                            <h3>Curriculum Vitae (CV)</h3>
+                            <p>Full Professional Resume File</p>
+                        </div>
+                    </div>
+                    <div class="folder-action-hint">
+                        <span><i class="fas fa-eye"></i> استعراض / View</span>
+                    </div>
+                </div>
+
+                <!-- 2. Education & Graduation Certificate -->
+                <div class="folder-card animate-on-scroll" onclick="openModal('edu-modal')">
+                    <div class="folder-header-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="bilingual-block">
+                        <div class="ar-side">
+                            <h3>التعليم وشهادة التخرج</h3>
+                            <p>المؤهلات الأكاديمية </p>
+                        </div>
+                        <div class="en-side">
+                            <h3>Education & Graduation Certificate</h3>
+                            <!-- <p>Academic Qualifications & Transcripts</p> -->
+                        </div>
+                    </div>
+                    <div class="folder-action-hint">
+                        <span><i class="fas fa-eye"></i> استعراض / View</span>
+                    </div>
+                </div>
+
+                <!-- 3. Experiences and Training
+                <div class="folder-card animate-on-scroll" onclick="openModal('exp-modal')">
+                    <div class="folder-header-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="bilingual-block">
+                        <div class="ar-side">
+                            <h3>الخبرات والتدريب</h3>
+                            <p>شهادات الخبرة العملية والدورات التدريبية</p>
+                        </div>
+                        <div class="en-side">
+                            <h3>Experiences & Training</h3>
+                            <p>Work History & Professional Training</p>
+                        </div>
+                    </div>
+                    <div class="folder-action-hint">
+                        <span><i class="fas fa-eye"></i> استعراض / View</span>
+                    </div>
+                </div> -->
+
+                <!-- 4. Internship -->
+                <div class="folder-card animate-on-scroll" onclick="openModal('intern-modal')">
+                    <div class="folder-header-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="bilingual-block">
+                        <div class="ar-side">
+                            <h3>التدريب الميداني</h3>
+                            <p>تقارير وشهادات إتمام التدريب العملي</p>
+                        </div>
+                        <div class="en-side">
+                            <h3>Internship Program</h3>
+                            <p>Field Training Reports & Completion Certificates</p>
+                        </div>
+                    </div>
+                    <div class="folder-action-hint">
+                        <span><i class="fas fa-eye"></i> استعراض / View</span>
+                    </div>
+                </div>
+
+                <!-- 5. Certificates (Technical & Personal) -->
+                <div class="folder-card animate-on-scroll" onclick="openModal('cert-modal')">
+                    <div class="folder-header-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="bilingual-block">
+                        <div class="ar-side">
+                            <h3>الشهادات المعتمدة</h3>
+                            <p>1. الشهادات التقنية<br>2. الشهادات الشخصية</p>
+                        </div>
+                        <div class="en-side">
+                            <h3>Certificates & Awards</h3>
+                            <p>1. Technical Certificates<br>2. Personal Certificates</p>
+                        </div>
+                    </div>
+                    <div class="folder-action-hint">
+                        <span><i class="fas fa-eye"></i> استعراض / View</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- Contact Me Section -->
+        <section class="card section-card animate-on-scroll" id="contact-section">
+            <div class="section-header">
+                <i class="fas fa-envelope-open-text section-icon"></i>
+                <div class="bilingual-inline">
+                    <span class="ar-inline">تواصل معي</span>
+                    <span class="en-inline">Contact Me</span>
+                </div>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Info Side -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="bilingual-block">
+                            <div class="ar-side">
+                                <strong>البريد الإلكتروني:</strong>
+                                <p>malfahdi200@gmail.com</p>
+                            </div>
+                            <div class="en-side">
+                                <strong>Email Address:</strong>
+                                <p>malfahdi200@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="bilingual-block">
+                            <div class="ar-side">
+                                <strong>رقم الهاتف / الواتساب:</strong>
+                                <p> 93556126 968+</p>
+                            </div>
+                            <div class="en-side">
+                                <strong>Phone / WhatsApp:</strong>
+                                <p>+968 93556126</p>
+                            </div>
+                        </div>
+                    </div>
+
+                   <!-- LinkedIn Profile Link -->
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <div class="bilingual-block">
+                    <div class="ar-side">
+                        <strong>لينكد إن:</strong>
+                        <p><a href="https://www.linkedin.com/in/mohammedalfahdii" target="_blank" rel="noopener noreferrer">محمد الفهدي | LinkedIn</a></p>
+                    </div>
+                    <div class="en-side">
+                        <strong>LinkedIn:</strong>
+                        <p><a href="https://www.linkedin.com/in/mohammedalfahdii" target="_blank" rel="noopener noreferrer">Mohammed Al Fahdi</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Form Side -->
+                <!-- <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <div class="bilingual-block">
+                            <div class="ar-side"><label>الاسم الكامل</label></div>
+                            <div class="en-side"><label>Full Name</label></div>
+                        </div>
+                        <input type="text" id="senderName" required placeholder="الاسم / Name">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="bilingual-block">
+                            <div class="ar-side"><label>البريد الإلكتروني</label></div>
+                            <div class="en-side"><label>Email Address</label></div>
+                        </div>
+                        <input type="email" id="senderEmail" required placeholder="example@mail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="bilingual-block">
+                            <div class="ar-side"><label>الرسالة</label></div>
+                            <div class="en-side"><label>Message</label></div>
+                        </div>
+                        <textarea id="senderMessage" rows="4" required placeholder="اكتب رسالتك هنا... / Write your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <div class="bilingual-inline">
+                            <span class="ar-inline"><i class="fas fa-paper-plane"></i> إرسال الرسالة</span>
+                            <span class="en-inline">Send Message <i class="fas fa-paper-plane"></i></span>
+                        </div>
+                    </button>
+                    <p id="formStatus" class="form-status"></p>
+                </form>
+            </div> -->
+        </section>
+
+    <!-- Modals for Viewing Documents -->
+
+    <!-- Modal 1: CV -->
+    <div id="cv-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('cv-modal')">&times;</span>
+            <div class="modal-header-bilingual">
+                <div class="ar-side"><h2>السيرة الذاتية</h2></div>
+                <div class="en-side"><h2>Curriculum Vitae (CV)</h2></div>
+            </div>
+            <div class="doc-list">
+                <a href="assets/Mohammed Al Fahdi_Resume.pdf" target="_blank" class="doc-btn">
+                    <div class="ar-side"><i class="fas fa-file-pdf"></i> تحميل / عرض السيرة الذاتية</div>
+                    <div class="en-side"><i class="fas fa-external-link-alt"></i> View / Download CV (PDF)</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Education -->
+    <div id="edu-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('edu-modal')">&times;</span>
+            <div class="modal-header-bilingual">
+                <div class="ar-side"><h2>المؤهلات الأكاديمية</h2></div>
+                <div class="en-side"><h2>Education & Graduation Certificate</h2></div>
+            </div>
+            <div class="doc-list">
+                <a href="assets/Graduation certificate-Mohammed_Alfahdi.pdf" target="_blank" class="doc-btn">
+                    <div class="ar-side"><i class="fas fa-graduation-cap"></i> شهادة التخرج الرسمية</div>
+                    <div class="en-side"><i class="fas fa-external-link-alt"></i> Official Graduation Certificate</div>
+                </a>
+                <!-- <a href="assets/academic-transcript.pdf" target="_blank" class="doc-btn">
+                    <div class="ar-side"><i class="fas fa-list-ol"></i> السجل الأكاديمي (كشف الدرجات)</div>
+                    <div class="en-side"><i class="fas fa-external-link-alt"></i> Official Academic Transcript</div>
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Experiences -->
+    <div id="exp-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('exp-modal')">&times;</span>
+            <div class="modal-header-bilingual">
+                <div class="ar-side"><h2>الخبرات والدورات التدريبية</h2></div>
+                <div class="en-side"><h2>Experiences and Training</h2></div>
+            </div>
+            <div class="doc-list">
+                <a href="assets/experience-certificate.pdf" target="_blank" class="doc-btn">
+                    <div class="ar-side"><i class="fas fa-briefcase"></i> شهادة خبرة عمل</div>
+                    <div class="en-side"><i class="fas fa-external-link-alt"></i> Certificate of Employment</div>
+                </a>
+                <a href="assets/training-courses.pdf" target="_blank" class="doc-btn">
+                    <div class="ar-side"><i class="fas fa-certificate"></i> شهادات الدورات التدريبية</div>
+                    <div class="en-side"><i class="fas fa-external-link-alt"></i> Training Course Certificates</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Internship -->
+    <div id="intern-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('intern-modal')">&times;</span>
+            <div class="modal-header-bilingual">
+                <div class="ar-side"><h2>التدريب الميداني</h2></div>
+                <div class="en-side"><h2>Internship Program</h2></div>
+            </div>
+            <div class="doc-list">
+                <a href="assets/Mohammed AlFahdi_Internship .pdf" target="_blank" class="doc-btn">
+                    <div class="ar-side"><i class="fas fa-user-graduate"></i> شهادة إتمام التدريب الميداني</div>
+                    <div class="en-side"><i class="fas fa-external-link-alt"></i> Internship Completion Certificate</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Certificates -->
+    <div id="cert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('cert-modal')">&times;</span>
+            <div class="modal-header-bilingual">
+                <div class="ar-side"><h2>سجل الشهادات والجوائز</h2></div>
+                <div class="en-side"><h2>Certificates & Accomplishments</h2></div>
+            </div>
+            
+            <!-- Category 1: Technical -->
+            <div class="cert-category-title">
+                <div class="ar-side"><h3>1. الشهادات التقنية</h3></div>
+                <div class="en-side"><h3>1. Technical Certificates</h3></div>
+            </div>
+            <div class="doc-list">
+                <a href="assets/Mohammed AlFahdi_Technical Certificates.pdf" target="_blank" class="doc-btn">
+                    <div class="ar-side"><i class="fas fa-laptop-code"></i> شهادة التخصص التقني / المهني</div>
+                    <div class="en-side"><i class="fas fa-external-link-alt"></i> Technical Specialization Cert</div>
+                </a>
+            </div>
+
+            <!-- Category 2: Personal -->
+            <div class="cert-category-title" style="margin-top: 20px;">
+                <div class="ar-side"><h3>2. الشهادات الشخصية والمهارات</h3></div>
+                <div class="en-side"><h3>2. Personal Certificates</h3></div>
+            </div>
+            <div class="doc-list">
+                <a href="assets/Mohammed AlFahdi_Personal certificates.pdf" target="_blank" class="doc-btn">
+                    <div class="ar-side"><i class="fas fa-award"></i> شهادة مهارات الاتصال والقيادة</div>
+                    <div class="en-side"><i class="fas fa-external-link-alt"></i> Leadership & Soft Skills Cert</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="bilingual-block">
+                <div class="ar-side"><p>© 2026 جميع الحقوق محفوظة - الملف الشخصي والمهني</p></div>
+                <div class="en-side"><p>© 2026 All Rights Reserved - Professional Portfolio</p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
