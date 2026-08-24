@@ -387,6 +387,8 @@ footer {
 }
 
 /* التكيف مع شاشات الهواتف */
+/* التكيف مع شاشات الهواتف */
+
 @media (max-width: 600px) {
     .footer-center-content {
         flex-direction: column;
